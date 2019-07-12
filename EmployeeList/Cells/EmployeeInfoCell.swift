@@ -40,7 +40,7 @@ class EmployeeInfoCell: UITableViewCell {
                                 DispatchQueue.main.async { [weak self] in
                                     self?.photoView.image = image
                                     self?.loadingIndicator.stopAnimating()
-//                                    self?.setNeedsDisplay()
+                                    self?.setNeedsDisplay()
                                 }
             }
         }

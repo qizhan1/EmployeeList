@@ -12,7 +12,7 @@ import Foundation
 struct EmployeeInfoResponse: Codable {
     
     
-    var employees: [EmployeeInfo]?
+    let employees: [EmployeeInfo]?
     
     
 }

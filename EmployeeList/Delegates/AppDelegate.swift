@@ -16,6 +16,8 @@ import UIKit
 // 4. Is the tableview capable of infinitely scrolling?
 // 5. Session cache VS disk cache?
 // 6. Preload data in table view
+// 7. Multithreading, lock for memory cache?
+// 8. certainly leverages the largest amount of Apple supported caching. I think with what you're trying to do, you should be able to leverage the NSURLSessionConfiguration and a particular cache policy to accomplish what you're looking to do.
 
 
 @UIApplicationMain

@@ -47,7 +47,17 @@ class  PhotoDataProvider {
             return
         }
         
-        // try local first
+        
+        // TODO: Add lock to ensure thread safety
+        
+        // 1. try memory
+        if let cachedImage = photoDict[photoURL] {
+            completion(cachedImage)
+            
+            return
+        }
+        
+        // 2. try local
         if let localImage = UIImage.getSavedImage(named: photoURL) {
             self.photoDict[photoURL] = localImage
             completion(localImage)
@@ -55,7 +65,7 @@ class  PhotoDataProvider {
             return
         }
         
-        // if it's not in local storage, try fetching from server
+        // 3. try remote api
         PhotoService.fetchPhoto(from: photoURL) { [weak self] image in
             completion(image)
             self?.photoDict[photoURL] = image
