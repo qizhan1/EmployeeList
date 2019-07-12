@@ -8,12 +8,31 @@
 
 /* Begin PBXBuildFile section */
 		75A86B1822D5453400663BFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A86B1722D5453400663BFD /* AppDelegate.swift */; };
-		75A86B1A22D5453400663BFD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A86B1922D5453400663BFD /* ViewController.swift */; };
-		75A86B1D22D5453400663BFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75A86B1B22D5453400663BFD /* Main.storyboard */; };
+		75A86B1A22D5453400663BFD /* EmployeeListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A86B1922D5453400663BFD /* EmployeeListTableViewController.swift */; };
 		75A86B1F22D5453700663BFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75A86B1E22D5453700663BFD /* Assets.xcassets */; };
-		75A86B2222D5453700663BFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75A86B2022D5453700663BFD /* LaunchScreen.storyboard */; };
 		75A86B2D22D5453700663BFD /* EmployeeListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A86B2C22D5453700663BFD /* EmployeeListTests.swift */; };
 		75A86B3822D5453800663BFD /* EmployeeListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A86B3722D5453800663BFD /* EmployeeListUITests.swift */; };
+		75A86B4622D547D000663BFD /* EmployeeInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A86B4522D547D000663BFD /* EmployeeInfo.swift */; };
+		75A86B4822D5483600663BFD /* EmployeeInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A86B4722D5483600663BFD /* EmployeeInfoCell.swift */; };
+		75A86B4A22D54F1000663BFD /* EmployeeInfoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A86B4922D54F1000663BFD /* EmployeeInfoService.swift */; };
+		75A86B4F22D556BB00663BFD /* URLRequestConvertiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A86B4E22D556BB00663BFD /* URLRequestConvertiable.swift */; };
+		75A86B5122D556C800663BFD /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A86B5022D556C800663BFD /* Router.swift */; };
+		75A86B5322D556EE00663BFD /* EmployeeInfoEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A86B5222D556EE00663BFD /* EmployeeInfoEndpoint.swift */; };
+		75A86B5522D559BD00663BFD /* NetworkLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A86B5422D559BD00663BFD /* NetworkLogger.swift */; };
+		75A86B5822D55F9300663BFD /* URLParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A86B5722D55F9300663BFD /* URLParameterEncoder.swift */; };
+		75A86B5B22D565E900663BFD /* EmployeeInfoResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A86B5A22D565E900663BFD /* EmployeeInfoResponse.swift */; };
+		75A86B5D22D5B41C00663BFD /* NSAttributedString+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A86B5C22D5B41C00663BFD /* NSAttributedString+Extensions.swift */; };
+		75A86B6022D5B7CE00663BFD /* NSParagraphStyle+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A86B5F22D5B7CE00663BFD /* NSParagraphStyle+Extensions.swift */; };
+		75A86B6222D5B8FB00663BFD /* NSShadow+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A86B6122D5B8FB00663BFD /* NSShadow+Extensions.swift */; };
+		75A86B6422D5BA2600663BFD /* UIFont+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A86B6322D5BA2600663BFD /* UIFont+Extensions.swift */; };
+		75A86B6622D5BD6200663BFD /* UIImageView+Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A86B6522D5BD6200663BFD /* UIImageView+Network.swift */; };
+		75A86B6922D5D04800663BFD /* PhotoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A86B6822D5D04800663BFD /* PhotoService.swift */; };
+		75A86B6B22D5D06E00663BFD /* PhotoDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A86B6A22D5D06E00663BFD /* PhotoDataProvider.swift */; };
+		75A86B6E22D5D09900663BFD /* EmployeeDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A86B6D22D5D09900663BFD /* EmployeeDataProvider.swift */; };
+		75A86B7822D6B5B000663BFD /* UIImage+FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A86B7722D6B5B000663BFD /* UIImage+FileManager.swift */; };
+		75A86B7A22D7214B00663BFD /* NetworkResponseValidatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A86B7922D7214A00663BFD /* NetworkResponseValidatable.swift */; };
+		75A86B7E22D7E10600663BFD /* ModelStateValidatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A86B7D22D7E10600663BFD /* ModelStateValidatable.swift */; };
+		75A86B8022D812E700663BFD /* Array+EmployeeInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A86B7F22D812E700663BFD /* Array+EmployeeInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,10 +55,8 @@
 /* Begin PBXFileReference section */
 		75A86B1422D5453400663BFD /* EmployeeList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmployeeList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75A86B1722D5453400663BFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		75A86B1922D5453400663BFD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		75A86B1C22D5453400663BFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		75A86B1922D5453400663BFD /* EmployeeListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeListTableViewController.swift; sourceTree = "<group>"; };
 		75A86B1E22D5453700663BFD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		75A86B2122D5453700663BFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		75A86B2322D5453700663BFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		75A86B2822D5453700663BFD /* EmployeeListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EmployeeListTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		75A86B2C22D5453700663BFD /* EmployeeListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeListTests.swift; sourceTree = "<group>"; };
@@ -47,6 +64,28 @@
 		75A86B3322D5453800663BFD /* EmployeeListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EmployeeListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		75A86B3722D5453800663BFD /* EmployeeListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeListUITests.swift; sourceTree = "<group>"; };
 		75A86B3922D5453800663BFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75A86B4522D547D000663BFD /* EmployeeInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeInfo.swift; sourceTree = "<group>"; };
+		75A86B4722D5483600663BFD /* EmployeeInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeInfoCell.swift; sourceTree = "<group>"; };
+		75A86B4922D54F1000663BFD /* EmployeeInfoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeInfoService.swift; sourceTree = "<group>"; };
+		75A86B4E22D556BB00663BFD /* URLRequestConvertiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLRequestConvertiable.swift; sourceTree = "<group>"; };
+		75A86B5022D556C800663BFD /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		75A86B5222D556EE00663BFD /* EmployeeInfoEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeInfoEndpoint.swift; sourceTree = "<group>"; };
+		75A86B5422D559BD00663BFD /* NetworkLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLogger.swift; sourceTree = "<group>"; };
+		75A86B5722D55F9300663BFD /* URLParameterEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLParameterEncoder.swift; sourceTree = "<group>"; };
+		75A86B5A22D565E900663BFD /* EmployeeInfoResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeInfoResponse.swift; sourceTree = "<group>"; };
+		75A86B5C22D5B41C00663BFD /* NSAttributedString+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+Extensions.swift"; sourceTree = "<group>"; };
+		75A86B5F22D5B7CE00663BFD /* NSParagraphStyle+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSParagraphStyle+Extensions.swift"; sourceTree = "<group>"; };
+		75A86B6122D5B8FB00663BFD /* NSShadow+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSShadow+Extensions.swift"; sourceTree = "<group>"; };
+		75A86B6322D5BA2600663BFD /* UIFont+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extensions.swift"; sourceTree = "<group>"; };
+		75A86B6522D5BD6200663BFD /* UIImageView+Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Network.swift"; sourceTree = "<group>"; };
+		75A86B6822D5D04800663BFD /* PhotoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoService.swift; sourceTree = "<group>"; };
+		75A86B6A22D5D06E00663BFD /* PhotoDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDataProvider.swift; sourceTree = "<group>"; };
+		75A86B6D22D5D09900663BFD /* EmployeeDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeDataProvider.swift; sourceTree = "<group>"; };
+		75A86B7122D658ED00663BFD /* EmployeeList-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EmployeeList-Bridging-Header.h"; sourceTree = "<group>"; };
+		75A86B7722D6B5B000663BFD /* UIImage+FileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+FileManager.swift"; sourceTree = "<group>"; };
+		75A86B7922D7214A00663BFD /* NetworkResponseValidatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResponseValidatable.swift; sourceTree = "<group>"; };
+		75A86B7D22D7E10600663BFD /* ModelStateValidatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelStateValidatable.swift; sourceTree = "<group>"; };
+		75A86B7F22D812E700663BFD /* Array+EmployeeInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+EmployeeInfo.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +136,19 @@
 		75A86B1622D5453400663BFD /* EmployeeList */ = {
 			isa = PBXGroup;
 			children = (
-				75A86B1722D5453400663BFD /* AppDelegate.swift */,
-				75A86B1922D5453400663BFD /* ViewController.swift */,
-				75A86B1B22D5453400663BFD /* Main.storyboard */,
-				75A86B1E22D5453700663BFD /* Assets.xcassets */,
-				75A86B2022D5453700663BFD /* LaunchScreen.storyboard */,
+				75A86B7522D658FF00663BFD /* Utils */,
+				75A86B6F22D5D0CF00663BFD /* Delegates */,
+				75A86B6722D5D02E00663BFD /* Cells */,
+				75A86B6C22D5D08100663BFD /* DataProviders */,
+				75A86B5E22D5B43B00663BFD /* Extensions */,
+				75A86B4B22D5523A00663BFD /* Models */,
+				75A86B4C22D5524D00663BFD /* NetworkServices */,
+				75A86B7C22D7E0EB00663BFD /* Protocols */,
+				75A86B4D22D5525D00663BFD /* ViewControllers */,
+				75A86B7022D6508700663BFD /* Resource */,
 				75A86B2322D5453700663BFD /* Info.plist */,
+				75A86B7122D658ED00663BFD /* EmployeeList-Bridging-Header.h */,
+				75A86B7622D6595D00663BFD /* Other */,
 			);
 			path = EmployeeList;
 			sourceTree = "<group>";
@@ -123,6 +169,131 @@
 				75A86B3922D5453800663BFD /* Info.plist */,
 			);
 			path = EmployeeListUITests;
+			sourceTree = "<group>";
+		};
+		75A86B4B22D5523A00663BFD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				75A86B4522D547D000663BFD /* EmployeeInfo.swift */,
+				75A86B5A22D565E900663BFD /* EmployeeInfoResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		75A86B4C22D5524D00663BFD /* NetworkServices */ = {
+			isa = PBXGroup;
+			children = (
+				75A86B7B22D7CC6A00663BFD /* PhotoService */,
+				75A86B5922D565BC00663BFD /* EmployeeInfoService */,
+				75A86B5622D55ABC00663BFD /* Router */,
+			);
+			path = NetworkServices;
+			sourceTree = "<group>";
+		};
+		75A86B4D22D5525D00663BFD /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				75A86B1922D5453400663BFD /* EmployeeListTableViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		75A86B5622D55ABC00663BFD /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				75A86B5022D556C800663BFD /* Router.swift */,
+				75A86B5422D559BD00663BFD /* NetworkLogger.swift */,
+				75A86B5722D55F9300663BFD /* URLParameterEncoder.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		75A86B5922D565BC00663BFD /* EmployeeInfoService */ = {
+			isa = PBXGroup;
+			children = (
+				75A86B5222D556EE00663BFD /* EmployeeInfoEndpoint.swift */,
+				75A86B4922D54F1000663BFD /* EmployeeInfoService.swift */,
+			);
+			path = EmployeeInfoService;
+			sourceTree = "<group>";
+		};
+		75A86B5E22D5B43B00663BFD /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				75A86B5C22D5B41C00663BFD /* NSAttributedString+Extensions.swift */,
+				75A86B5F22D5B7CE00663BFD /* NSParagraphStyle+Extensions.swift */,
+				75A86B6122D5B8FB00663BFD /* NSShadow+Extensions.swift */,
+				75A86B6322D5BA2600663BFD /* UIFont+Extensions.swift */,
+				75A86B7F22D812E700663BFD /* Array+EmployeeInfo.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		75A86B6722D5D02E00663BFD /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				75A86B4722D5483600663BFD /* EmployeeInfoCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		75A86B6C22D5D08100663BFD /* DataProviders */ = {
+			isa = PBXGroup;
+			children = (
+				75A86B6A22D5D06E00663BFD /* PhotoDataProvider.swift */,
+				75A86B6D22D5D09900663BFD /* EmployeeDataProvider.swift */,
+			);
+			path = DataProviders;
+			sourceTree = "<group>";
+		};
+		75A86B6F22D5D0CF00663BFD /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				75A86B1722D5453400663BFD /* AppDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		75A86B7022D6508700663BFD /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				75A86B1E22D5453700663BFD /* Assets.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		75A86B7522D658FF00663BFD /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				75A86B6522D5BD6200663BFD /* UIImageView+Network.swift */,
+				75A86B7722D6B5B000663BFD /* UIImage+FileManager.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		75A86B7622D6595D00663BFD /* Other */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		75A86B7B22D7CC6A00663BFD /* PhotoService */ = {
+			isa = PBXGroup;
+			children = (
+				75A86B6822D5D04800663BFD /* PhotoService.swift */,
+			);
+			path = PhotoService;
+			sourceTree = "<group>";
+		};
+		75A86B7C22D7E0EB00663BFD /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				75A86B4E22D556BB00663BFD /* URLRequestConvertiable.swift */,
+				75A86B7922D7214A00663BFD /* NetworkResponseValidatable.swift */,
+				75A86B7D22D7E10600663BFD /* ModelStateValidatable.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,6 +364,7 @@
 				TargetAttributes = {
 					75A86B1322D5453400663BFD = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
 					};
 					75A86B2722D5453700663BFD = {
 						CreatedOnToolsVersion = 10.2.1;
@@ -229,9 +401,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				75A86B2222D5453700663BFD /* LaunchScreen.storyboard in Resources */,
 				75A86B1F22D5453700663BFD /* Assets.xcassets in Resources */,
-				75A86B1D22D5453400663BFD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,7 +426,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				75A86B1A22D5453400663BFD /* ViewController.swift in Sources */,
+				75A86B5B22D565E900663BFD /* EmployeeInfoResponse.swift in Sources */,
+				75A86B7E22D7E10600663BFD /* ModelStateValidatable.swift in Sources */,
+				75A86B4F22D556BB00663BFD /* URLRequestConvertiable.swift in Sources */,
+				75A86B4622D547D000663BFD /* EmployeeInfo.swift in Sources */,
+				75A86B5322D556EE00663BFD /* EmployeeInfoEndpoint.swift in Sources */,
+				75A86B5D22D5B41C00663BFD /* NSAttributedString+Extensions.swift in Sources */,
+				75A86B6622D5BD6200663BFD /* UIImageView+Network.swift in Sources */,
+				75A86B4A22D54F1000663BFD /* EmployeeInfoService.swift in Sources */,
+				75A86B6222D5B8FB00663BFD /* NSShadow+Extensions.swift in Sources */,
+				75A86B5122D556C800663BFD /* Router.swift in Sources */,
+				75A86B6022D5B7CE00663BFD /* NSParagraphStyle+Extensions.swift in Sources */,
+				75A86B4822D5483600663BFD /* EmployeeInfoCell.swift in Sources */,
+				75A86B5522D559BD00663BFD /* NetworkLogger.swift in Sources */,
+				75A86B6E22D5D09900663BFD /* EmployeeDataProvider.swift in Sources */,
+				75A86B1A22D5453400663BFD /* EmployeeListTableViewController.swift in Sources */,
+				75A86B5822D55F9300663BFD /* URLParameterEncoder.swift in Sources */,
+				75A86B8022D812E700663BFD /* Array+EmployeeInfo.swift in Sources */,
+				75A86B7822D6B5B000663BFD /* UIImage+FileManager.swift in Sources */,
+				75A86B7A22D7214B00663BFD /* NetworkResponseValidatable.swift in Sources */,
+				75A86B6922D5D04800663BFD /* PhotoService.swift in Sources */,
+				75A86B6422D5BA2600663BFD /* UIFont+Extensions.swift in Sources */,
+				75A86B6B22D5D06E00663BFD /* PhotoDataProvider.swift in Sources */,
 				75A86B1822D5453400663BFD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -291,25 +482,6 @@
 			targetProxy = 75A86B3422D5453800663BFD /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		75A86B1B22D5453400663BFD /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				75A86B1C22D5453400663BFD /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		75A86B2022D5453700663BFD /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				75A86B2122D5453700663BFD /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		75A86B3A22D5453800663BFD /* Debug */ = {
@@ -432,6 +604,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WHLVPA84MS;
 				INFOPLIST_FILE = EmployeeList/Info.plist;
@@ -441,6 +614,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = qi.EmployeeList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "EmployeeList/EmployeeList-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -450,6 +625,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WHLVPA84MS;
 				INFOPLIST_FILE = EmployeeList/Info.plist;
@@ -459,6 +635,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = qi.EmployeeList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "EmployeeList/EmployeeList-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
