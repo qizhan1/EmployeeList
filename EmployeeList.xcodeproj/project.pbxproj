@@ -33,6 +33,7 @@
 		75A86B7A22D7214B00663BFD /* NetworkResponseValidatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A86B7922D7214A00663BFD /* NetworkResponseValidatable.swift */; };
 		75A86B7E22D7E10600663BFD /* ModelStateValidatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A86B7D22D7E10600663BFD /* ModelStateValidatable.swift */; };
 		75A86B8022D812E700663BFD /* Array+EmployeeInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A86B7F22D812E700663BFD /* Array+EmployeeInfo.swift */; };
+		75A86B8222DB07CD00663BFD /* String+MD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A86B8122DB07CD00663BFD /* String+MD5.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +87,7 @@
 		75A86B7922D7214A00663BFD /* NetworkResponseValidatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResponseValidatable.swift; sourceTree = "<group>"; };
 		75A86B7D22D7E10600663BFD /* ModelStateValidatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelStateValidatable.swift; sourceTree = "<group>"; };
 		75A86B7F22D812E700663BFD /* Array+EmployeeInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+EmployeeInfo.swift"; sourceTree = "<group>"; };
+		75A86B8122DB07CD00663BFD /* String+MD5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+MD5.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -267,6 +269,7 @@
 			children = (
 				75A86B6522D5BD6200663BFD /* UIImageView+Network.swift */,
 				75A86B7722D6B5B000663BFD /* UIImage+FileManager.swift */,
+				75A86B8122DB07CD00663BFD /* String+MD5.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -437,6 +440,7 @@
 				75A86B6222D5B8FB00663BFD /* NSShadow+Extensions.swift in Sources */,
 				75A86B5122D556C800663BFD /* Router.swift in Sources */,
 				75A86B6022D5B7CE00663BFD /* NSParagraphStyle+Extensions.swift in Sources */,
+				75A86B8222DB07CD00663BFD /* String+MD5.swift in Sources */,
 				75A86B4822D5483600663BFD /* EmployeeInfoCell.swift in Sources */,
 				75A86B5522D559BD00663BFD /* NetworkLogger.swift in Sources */,
 				75A86B6E22D5D09900663BFD /* EmployeeDataProvider.swift in Sources */,

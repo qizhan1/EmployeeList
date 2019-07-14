@@ -19,6 +19,7 @@ class EmployeeListTableViewController: UIViewController {
     
     // - MARK: Overrided Methods
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -47,6 +48,7 @@ class EmployeeListTableViewController: UIViewController {
         view.backgroundColor = UIColor.black
         tableView.separatorStyle = .none
         tableView.allowsSelection = false
+        tableView.estimatedRowHeight = view.bounds.size.height
     }
 
     
@@ -67,7 +69,7 @@ class EmployeeListTableViewController: UIViewController {
     private func wireDelegation() {
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.prefetchDataSource = self
+//        tableView.prefetchDataSource = self
     }
     
     

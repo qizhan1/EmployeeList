@@ -34,6 +34,7 @@ class EmployeeInfoCell: UITableViewCell {
     var employeeInfo: EmployeeInfo? {
         didSet {
             self.setNeedsLayout()
+            loadingIndicator.startAnimating()
             PhotoDataProvider.shared
                 .fetchPhoto(for: employeeInfo,
                             with: .large) { image in
@@ -94,7 +95,6 @@ class EmployeeInfoCell: UITableViewCell {
     fileprivate func setupLoadingIndicator() {
         loadingIndicator.hidesWhenStopped = true
         loadingIndicator.style = .whiteLarge
-        loadingIndicator.startAnimating()
     }
     
     

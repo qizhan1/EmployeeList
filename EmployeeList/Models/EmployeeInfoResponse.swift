@@ -9,7 +9,7 @@
 import Foundation
 
 
-struct EmployeeInfoResponse: Codable {
+struct EmployeeInfoResponse: Decodable {
     
     
     let employees: [EmployeeInfo]?

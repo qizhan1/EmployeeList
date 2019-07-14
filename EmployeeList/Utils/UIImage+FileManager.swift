@@ -70,7 +70,7 @@ extension UIImage {
     
     
     static func getSavedImage(named: String) -> UIImage? {
-        if let dir = try? FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false) {
+        if let dir = try? FileManager.default.url(for: .cachesDirectory, in: .userDomainMask, appropriateFor: nil, create: false) {
             let urlPath = URL(fileURLWithPath: dir.absoluteString).appendingPathComponent(named).path
             if FileManager.default.fileExists(atPath: urlPath) {
                 
