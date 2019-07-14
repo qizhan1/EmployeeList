@@ -29,6 +29,7 @@ class EmployeeListTableViewController: UIViewController {
         wireDelegation()
         applyStyle()
         fetchEmployeeData()
+        PhotoDataProvider.shared.delegate = self
     }
 
     
@@ -66,6 +67,7 @@ class EmployeeListTableViewController: UIViewController {
     private func wireDelegation() {
         tableView.delegate = self
         tableView.dataSource = self
+        tableView.prefetchDataSource = self
     }
     
     
@@ -107,4 +109,26 @@ extension EmployeeListTableViewController: UITableViewDataSource {
     }
     
     
+}
+
+
+extension EmployeeListTableViewController: UITableViewDataSourcePrefetching {
+    func tableView(_ tableView: UITableView, prefetchRowsAt indexPaths: [IndexPath]) {
+        print("prefetchRowsAt \(indexPaths)")
+        
+        for indexPath in indexPaths {
+            if let employee = employees?[indexPath.row] {
+                PhotoDataProvider.shared.fetchPhoto(for: employee, at: indexPath)
+            }
+        }
+        
+    }
+}
+
+
+extension EmployeeListTableViewController: PhotoDataProviderDelegate {
+    
+    func didFinishFetchingPhoto(for employeID: String?, image: UIImage?, at indexPath: IndexPath) {
+        
+    }
 }

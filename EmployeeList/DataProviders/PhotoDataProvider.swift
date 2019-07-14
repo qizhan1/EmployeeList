@@ -10,6 +10,15 @@
 import Foundation
 
 
+protocol PhotoDataProviderDelegate: NSObjectProtocol {
+    
+    
+    func didFinishFetchingPhoto(for employeID: String?, image: UIImage?, at indexPath: IndexPath)
+    
+    
+}
+
+
 enum PhotoSize: String {
     case large = "large"
     case small = "small"
@@ -25,10 +34,39 @@ class  PhotoDataProvider {
     static let shared = PhotoDataProvider()
     
     
+    // - MARK: Private Properties
+    
+    private let concurrentPhotoQueue = DispatchQueue( label: "com.employeeList.photoQueue",
+                                                      attributes: .concurrent)
+    
+    
     // - MARK: Cached data in memeory
     
     
-    var photoDict: Dictionary<String, UIImage> = Dictionary<String, UIImage>()
+    private var unsafePhotoDict = [String: UIImage]()
+    var photoDict: [String: UIImage] {
+        var photoDictCopy = [String: UIImage]()
+        concurrentPhotoQueue.sync {
+            photoDictCopy = self.unsafePhotoDict
+        }
+        return photoDictCopy
+    }
+    
+    
+    // - MARK: Delegate
+    
+    
+    weak var delegate: PhotoDataProviderDelegate?
+    
+    
+    // - MARK: Public Methods
+    
+    
+    public func fetchPhoto(for employee: EmployeeInfo?, at indexPath: IndexPath) {
+        fetchPhoto(for: employee, with: .large) { [weak self] image in
+            self?.delegate?.didFinishFetchingPhoto(for: employee?.uuid, image: image, at: indexPath)
+        }
+    }
     
     
     public func fetchPhoto(for employee: EmployeeInfo?,
@@ -59,7 +97,7 @@ class  PhotoDataProvider {
         
         // 2. try local
         if let localImage = UIImage.getSavedImage(named: photoURL) {
-            self.photoDict[photoURL] = localImage
+            addPhoto(localImage, with: photoURL)
             completion(localImage)
             
             return
@@ -68,11 +106,18 @@ class  PhotoDataProvider {
         // 3. try remote api
         PhotoService.fetchPhoto(from: photoURL) { [weak self] image in
             completion(image)
-            self?.photoDict[photoURL] = image
+            self?.addPhoto(image, with: photoURL)
             image?.save(at: .documentDirectory, pathAndImageName: photoURL)
         }
     }
     
+    
+    private func addPhoto(_ photo: UIImage?, with key: String?) {
+        guard let photo = photo, let key = key else { return }
+        concurrentPhotoQueue.async(flags: .barrier) { [weak self] in
+            self?.unsafePhotoDict[key] = photo
+        }
+    }
 }
 
 
