@@ -1,16 +1,22 @@
-//
-//  Router.swift
-//  EmployeeList
-//
-//  Created by Qi Zhan on 7/9/19.
-//  Copyright © 2019 Qi Zhan. All rights reserved.
-//
+// *************************************************************************************************
+// - MARK: Imports
 
 
 import Foundation
 
 
-public typealias NetworkRouterCompletion = (_ data: Data?, _ response: URLResponse?, _ error: Error?) -> Void
+// *************************************************************************************************
+// - MARK: Typealias
+
+
+
+public typealias NetworkRouterCompletion
+    = (_ data: Data?, _ response: URLResponse?, _ error: Error?) -> Void
+
+
+// *************************************************************************************************
+// - MARK: NetworkRouter Protocols
+
 
 
 protocol NetworkRouter: class {
@@ -24,6 +30,10 @@ protocol NetworkRouter: class {
 }
 
 
+// *************************************************************************************************
+// - MARK: Router
+
+
 class Router<EndPoint: URLRequestConvertiable>: NetworkRouter {
     
     
@@ -34,7 +44,6 @@ class Router<EndPoint: URLRequestConvertiable>: NetworkRouter {
         let session = URLSession.shared
         do {
             let request = try self.buildRequest(from: route)
-            NetworkLogger.log(request: request)
             task = session.dataTask(with: request) { data, response, error in
                 completion(data, response, error)
             }
@@ -98,7 +107,8 @@ class Router<EndPoint: URLRequestConvertiable>: NetworkRouter {
     }
     
     
-    fileprivate func addAdditionalHeaders(_ additionalHeaders: HTTPHeaders?, request: inout URLRequest) {
+    fileprivate func addAdditionalHeaders(_ additionalHeaders: HTTPHeaders?,
+                                          request: inout URLRequest) {
         guard let headers = additionalHeaders else { return }
         for (key, value) in headers {
             request.setValue(value, forHTTPHeaderField: key)

@@ -1,13 +1,12 @@
-//
-//  ViewController.swift
-//  EmployeeList
-//
-//  Created by Qi Zhan on 7/9/19.
-//  Copyright © 2019 Qi Zhan. All rights reserved.
-//
+// *************************************************************************************************
+// - MARK: Imports
 
 
 import UIKit
+
+
+// *************************************************************************************************
+// - MARK: EmployeeListTableViewController
 
 
 class EmployeeListTableViewController: UIViewController {
@@ -30,7 +29,6 @@ class EmployeeListTableViewController: UIViewController {
         wireDelegation()
         applyStyle()
         fetchEmployeeData()
-        PhotoDataProvider.shared.delegate = self
     }
 
     
@@ -69,11 +67,15 @@ class EmployeeListTableViewController: UIViewController {
     private func wireDelegation() {
         tableView.delegate = self
         tableView.dataSource = self
+        // TODO: For optimization, we can prefetch employee photos
 //        tableView.prefetchDataSource = self
     }
     
     
 }
+
+// *************************************************************************************************
+// - MARK: UITableViewDelegate
 
 
 extension EmployeeListTableViewController: UITableViewDelegate {
@@ -87,6 +89,10 @@ extension EmployeeListTableViewController: UITableViewDelegate {
     
     
 }
+
+
+// *************************************************************************************************
+// - MARK: UITableViewDataSource
 
 
 extension EmployeeListTableViewController: UITableViewDataSource {
@@ -114,23 +120,18 @@ extension EmployeeListTableViewController: UITableViewDataSource {
 }
 
 
+// *************************************************************************************************
+// - MARK: UITableViewDataSourcePrefetching
+
+
 extension EmployeeListTableViewController: UITableViewDataSourcePrefetching {
     func tableView(_ tableView: UITableView, prefetchRowsAt indexPaths: [IndexPath]) {
-        print("prefetchRowsAt \(indexPaths)")
-        
+        // TODO: For optimization, we can prefetch employee photos
         for indexPath in indexPaths {
             if let employee = employees?[indexPath.row] {
                 PhotoDataProvider.shared.fetchPhoto(for: employee, at: indexPath)
             }
         }
-        
-    }
-}
-
-
-extension EmployeeListTableViewController: PhotoDataProviderDelegate {
-    
-    func didFinishFetchingPhoto(for employeID: String?, image: UIImage?, at indexPath: IndexPath) {
         
     }
 }

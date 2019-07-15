@@ -1,14 +1,15 @@
-//
-//  EmployeeListTests.swift
-//  EmployeeListTests
-//
-//  Created by Qi Zhan on 7/9/19.
-//  Copyright © 2019 Qi Zhan. All rights reserved.
-//
+// *************************************************************************************************
+// - MARK: Imports
+
 
 import XCTest
 import Mockingjay
 @testable import EmployeeList
+
+
+// *************************************************************************************************
+// - MARK: EmployeeListTests
+
 
 class EmployeeListTests: XCTestCase {
 
@@ -20,18 +21,19 @@ class EmployeeListTests: XCTestCase {
         let employeesResponse = try! Data(contentsOf: employeesListURL)
         stub(http(.get, uri: "https://s3.amazonaws.com/sq-mobile-interview/employees.json"), jsonData(employeesResponse))
     }
+    
 
     func testEmployeesInfoService() {
         let fetchResponseExpectation = expectation(description: "fetch employees list response")
         
         EmployeeService.getInfo { (employeesData, error) in
-            fetchResponseExpectation.fulfill()
             guard let employeeInfo = employeesData?[0] else {
                 XCTFail("empolyee info parse error")
                 
                 return
             }
-            XCTAssertEqual(employeeInfo.uuid, "0d8fcc12-4d0c-425c-8355-390b312b909c", "uuid not correct")
+            
+            XCTAssertEqual(employeeInfo.uuid!, "0d8fcc12-4d0c-425c-8355-390b312b909c", "uuid not correct")
             XCTAssertEqual(employeeInfo.fullName, "Justine Mason", "full name not correct")
             XCTAssertEqual(employeeInfo.phoneNumber, "5553280123", "phone number not correct")
             XCTAssertEqual(employeeInfo.emailAddress, "jmason.demo@squareup.com", "email address not correct")
@@ -41,6 +43,8 @@ class EmployeeListTests: XCTestCase {
             XCTAssertEqual(employeeInfo.team, "Point of Sale", "team not correct")
             XCTAssertEqual(employeeInfo.employeeType?.rawValue, "FULL_TIME", "type not correct")
             XCTAssertEqual(employeeInfo.biography, "Engineer on the Point of Sale team.", "biography not correct")
+            
+            fetchResponseExpectation.fulfill()
         }
         waitForExpectations(timeout: 5, handler: nil)
     }

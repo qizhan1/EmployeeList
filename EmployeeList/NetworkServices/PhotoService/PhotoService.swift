@@ -1,13 +1,12 @@
-//
-//  PhotoService.swift
-//  EmployeeList
-//
-//  Created by Qi Zhan on 7/10/19.
-//  Copyright © 2019 Qi Zhan. All rights reserved.
-//
+// *************************************************************************************************
+// - MARK: Imports
 
 
 import Foundation
+
+
+// *************************************************************************************************
+// - MARK: PhotoService
 
 
 class PhotoService {

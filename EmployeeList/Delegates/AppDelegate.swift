@@ -1,10 +1,6 @@
-//
-//  AppDelegate.swift
-//  EmployeeList
-//
-//  Created by Qi Zhan on 7/9/19.
-//  Copyright © 2019 Qi Zhan. All rights reserved.
-//
+// *************************************************************************************************
+// - MARK: Imports
+
 
 import UIKit
 
@@ -18,6 +14,10 @@ import UIKit
 // 6. Preload data in table view
 // 7. Multithreading, lock for memory cache?
 // 8. certainly leverages the largest amount of Apple supported caching. I think with what you're trying to do, you should be able to leverage the NSURLSessionConfiguration and a particular cache policy to accomplish what you're looking to do.
+
+
+// *************************************************************************************************
+// - MARK: AppDelegate
 
 
 @UIApplicationMain

@@ -1,12 +1,12 @@
-//
-//  EmployeeInfoEndpoint.swift
-//  EmployeeList
-//
-//  Created by Qi Zhan on 7/9/19.
-//  Copyright © 2019 Qi Zhan. All rights reserved.
-//
+// *************************************************************************************************
+// - MARK: Imports
+
 
 import Foundation
+
+
+// *************************************************************************************************
+// - MARK: EmployeeInfoEndpoint
 
 
 public enum EmployeeInfoEndpoint {
@@ -14,6 +14,10 @@ public enum EmployeeInfoEndpoint {
     case malformed
     case empty
 }
+
+
+// *************************************************************************************************
+// - MARK: EmployeeInfoEndpoint Extension
 
 
 extension EmployeeInfoEndpoint: URLRequestConvertiable {

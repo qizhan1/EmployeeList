@@ -1,12 +1,12 @@
-//
-//  ResponseValidatable.swift
-//  EmployeeList
-//
-//  Created by Qi Zhan on 7/11/19.
-//  Copyright © 2019 Qi Zhan. All rights reserved.
-//
+// *************************************************************************************************
+// - MARK: Imports
+
 
 import Foundation
+
+
+// *************************************************************************************************
+// - MARK: NetworkResponse
 
 
 enum NetworkResponse:String {
@@ -20,10 +20,18 @@ enum NetworkResponse:String {
 }
 
 
+// *************************************************************************************************
+// - MARK: Result
+
+
 enum Result<String>{
     case success
     case failure(String)
 }
+
+
+// *************************************************************************************************
+// - MARK: NetworkResponseValidatable
 
 
 protocol NetworkResponseValidatable {
@@ -33,6 +41,10 @@ protocol NetworkResponseValidatable {
     
     
 }
+
+
+// *************************************************************************************************
+// - MARK: NetworkResponseValidatable
 
 
 extension NetworkResponseValidatable {

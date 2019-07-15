@@ -1,16 +1,20 @@
-//
-//  EndpointProtocol.swift
-//  EmployeeList
-//
-//  Created by Qi Zhan on 7/9/19.
-//  Copyright © 2019 Qi Zhan. All rights reserved.
-//
+// *************************************************************************************************
+// - MARK: Imports
+
 
 import Foundation
 
 
+// *************************************************************************************************
+// - MARK: Typealias
+
+
 public typealias HTTPHeaders = [String:String]
 public typealias Parameters = [String:Any]
+
+
+// *************************************************************************************************
+// - MARK: HTTPTask
 
 
 public enum HTTPTask {
@@ -25,6 +29,10 @@ public enum HTTPTask {
 }
 
 
+// *************************************************************************************************
+// - MARK: HTTPMethod
+
+
 public enum HTTPMethod : String {
     case get     = "GET"
     case post    = "POST"
@@ -32,6 +40,10 @@ public enum HTTPMethod : String {
     case patch   = "PATCH"
     case delete  = "DELETE"
 }
+
+
+// *************************************************************************************************
+// - MARK: URLRequestConvertiable
 
 
 protocol URLRequestConvertiable {

@@ -1,12 +1,12 @@
-//
-//  EmployeInfoService.swift
-//  EmployeeList
-//
-//  Created by Qi Zhan on 7/9/19.
-//  Copyright © 2019 Qi Zhan. All rights reserved.
-//
+// *************************************************************************************************
+// - MARK: Imports
+
 
 import Foundation
+
+
+// *************************************************************************************************
+// - MARK: EmployeeService
 
 
 class EmployeeService: NetworkResponseValidatable {
@@ -28,9 +28,6 @@ class EmployeeService: NetworkResponseValidatable {
                         return
                     }
                     do {
-//                        print(responseData)
-//                        let jsonData = try JSONSerialization.jsonObject(with: responseData, options: .mutableContainers)
-//                        print(jsonData)
                         let apiResponse = try JSONDecoder().decode(EmployeeInfoResponse.self, from: responseData)
                         completion(apiResponse.employees,nil)
                     }catch {

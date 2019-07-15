@@ -1,14 +1,13 @@
-//
-//  UIImage+FileManager.swift
-//  EmployeeList
-//
-//  Created by Qi Zhan on 7/10/19.
-//  Copyright © 2019 Qi Zhan. All rights reserved.
-//
+// *************************************************************************************************
+// - MARK: Imports
 
 
 import Foundation
 import UIKit
+
+
+// *************************************************************************************************
+// - MARK: UIImage Extension
 
 
 extension UIImage {
@@ -56,17 +55,6 @@ extension UIImage {
 
 
 extension UIImage {
-    
-    
-    convenience init?(fileURLWithPath url: URL, scale: CGFloat = 1.0) {
-        do {
-            let data = try Data(contentsOf: url)
-            self.init(data: data, scale: scale)
-        } catch {
-            print("-- Error: \(error)")
-            return nil
-        }
-    }
     
     
     static func getSavedImage(named: String) -> UIImage? {

@@ -1,12 +1,12 @@
-//
-//  EmployeeInfo.swift
-//  EmployeeList
-//
-//  Created by Qi Zhan on 7/9/19.
-//  Copyright © 2019 Qi Zhan. All rights reserved.
-//
+// *************************************************************************************************
+// - MARK: Imports
+
 
 import Foundation
+
+
+// *************************************************************************************************
+// - MARK: EmployeeType
 
 
 enum EmployeeType: String, Decodable {
@@ -28,6 +28,10 @@ extension EmployeeType {
         }
     }
 }
+
+
+// *************************************************************************************************
+// - MARK: EmployeeInfo
 
 
 struct EmployeeInfo: Decodable {
@@ -60,6 +64,10 @@ struct EmployeeInfo: Decodable {
 }
 
 
+// *************************************************************************************************
+// - MARK: EmployeeInfo Extensions
+
+
 extension EmployeeInfo: Equatable {
     
     
@@ -81,6 +89,10 @@ extension EmployeeInfo: Hashable {
     
     
 }
+
+
+// *************************************************************************************************
+// - MARK: EmployeeInfo Extensions
 
 
 extension EmployeeInfo: ModelStateValidatable {

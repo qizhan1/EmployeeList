@@ -1,13 +1,14 @@
-//
-//  String+md5.swift
-//  EmployeeList
-//
-//  Created by Qi Zhan on 7/13/19.
-//  Copyright © 2019 Qi Zhan. All rights reserved.
-//
+// *************************************************************************************************
+// - MARK: Imports
+
 
 import Foundation
 import CommonCrypto
+
+
+// *************************************************************************************************
+// - MARK: String Extension
+
 
 extension String {
     

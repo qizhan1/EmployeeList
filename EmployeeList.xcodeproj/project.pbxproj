@@ -20,7 +20,6 @@
 		75A86B4F22D556BB00663BFD /* URLRequestConvertiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A86B4E22D556BB00663BFD /* URLRequestConvertiable.swift */; };
 		75A86B5122D556C800663BFD /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A86B5022D556C800663BFD /* Router.swift */; };
 		75A86B5322D556EE00663BFD /* EmployeeInfoEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A86B5222D556EE00663BFD /* EmployeeInfoEndpoint.swift */; };
-		75A86B5522D559BD00663BFD /* NetworkLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A86B5422D559BD00663BFD /* NetworkLogger.swift */; };
 		75A86B5822D55F9300663BFD /* URLParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A86B5722D55F9300663BFD /* URLParameterEncoder.swift */; };
 		75A86B5B22D565E900663BFD /* EmployeeInfoResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A86B5A22D565E900663BFD /* EmployeeInfoResponse.swift */; };
 		75A86B5D22D5B41C00663BFD /* NSAttributedString+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A86B5C22D5B41C00663BFD /* NSAttributedString+Extensions.swift */; };
@@ -78,7 +77,6 @@
 		75A86B4E22D556BB00663BFD /* URLRequestConvertiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLRequestConvertiable.swift; sourceTree = "<group>"; };
 		75A86B5022D556C800663BFD /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		75A86B5222D556EE00663BFD /* EmployeeInfoEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeInfoEndpoint.swift; sourceTree = "<group>"; };
-		75A86B5422D559BD00663BFD /* NetworkLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLogger.swift; sourceTree = "<group>"; };
 		75A86B5722D55F9300663BFD /* URLParameterEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLParameterEncoder.swift; sourceTree = "<group>"; };
 		75A86B5A22D565E900663BFD /* EmployeeInfoResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeInfoResponse.swift; sourceTree = "<group>"; };
 		75A86B5C22D5B41C00663BFD /* NSAttributedString+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+Extensions.swift"; sourceTree = "<group>"; };
@@ -147,6 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				75A86B1622D5453400663BFD /* EmployeeList */,
+				75A86B7522D658FF00663BFD /* Utils */,
 				75A86B2B22D5453700663BFD /* EmployeeListTests */,
 				75A86B3622D5453800663BFD /* EmployeeListUITests */,
 				75A86B1522D5453400663BFD /* Products */,
@@ -168,10 +167,9 @@
 		75A86B1622D5453400663BFD /* EmployeeList */ = {
 			isa = PBXGroup;
 			children = (
-				75A86B7522D658FF00663BFD /* Utils */,
-				75A86B6F22D5D0CF00663BFD /* Delegates */,
 				75A86B6722D5D02E00663BFD /* Cells */,
 				75A86B6C22D5D08100663BFD /* DataProviders */,
+				75A86B6F22D5D0CF00663BFD /* Delegates */,
 				75A86B5E22D5B43B00663BFD /* Extensions */,
 				75A86B4B22D5523A00663BFD /* Models */,
 				75A86B4C22D5524D00663BFD /* NetworkServices */,
@@ -235,7 +233,6 @@
 			isa = PBXGroup;
 			children = (
 				75A86B5022D556C800663BFD /* Router.swift */,
-				75A86B5422D559BD00663BFD /* NetworkLogger.swift */,
 				75A86B5722D55F9300663BFD /* URLParameterEncoder.swift */,
 			);
 			path = Router;
@@ -563,7 +560,6 @@
 				75A86B6022D5B7CE00663BFD /* NSParagraphStyle+Extensions.swift in Sources */,
 				75A86B8222DB07CD00663BFD /* String+MD5.swift in Sources */,
 				75A86B4822D5483600663BFD /* EmployeeInfoCell.swift in Sources */,
-				75A86B5522D559BD00663BFD /* NetworkLogger.swift in Sources */,
 				75A86B6E22D5D09900663BFD /* EmployeeDataProvider.swift in Sources */,
 				75A86B1A22D5453400663BFD /* EmployeeListTableViewController.swift in Sources */,
 				75A86B5822D55F9300663BFD /* URLParameterEncoder.swift in Sources */,

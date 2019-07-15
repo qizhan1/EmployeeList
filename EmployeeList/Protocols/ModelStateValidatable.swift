@@ -1,12 +1,12 @@
-//
-//  ModelStateValidatable.swift
-//  EmployeeList
-//
-//  Created by Qi Zhan on 7/11/19.
-//  Copyright © 2019 Qi Zhan. All rights reserved.
-//
+// *************************************************************************************************
+// - MARK: Imports
+
 
 import Foundation
+
+
+// *************************************************************************************************
+// - MARK: protocol
 
 
 protocol ModelStateValidatable {
@@ -16,6 +16,10 @@ protocol ModelStateValidatable {
     
     
 }
+
+
+// *************************************************************************************************
+// - MARK: ModelStateValidatable
 
 
 extension ModelStateValidatable {

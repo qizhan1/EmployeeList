@@ -1,12 +1,12 @@
-//
-//  Array+EmployeeInfo.swift
-//  EmployeeList
-//
-//  Created by Qi Zhan on 7/11/19.
-//  Copyright © 2019 Qi Zhan. All rights reserved.
-//
+// *************************************************************************************************
+// - MARK: Imports
+
 
 import Foundation
+
+
+// *************************************************************************************************
+// - MARK: Array Extension
 
 
 extension Array where Element == EmployeeInfo {

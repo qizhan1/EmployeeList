@@ -62,14 +62,13 @@ public struct URITemplate : CustomStringConvertible, Equatable, Hashable, Expres
     return template
   }
 
-//  public var hashValue: Int {
-//    return template.hashValue
-//  }
+  public var hashValue: Int {
+    return template.hashValue
+  }
     
-    public func hash(into hasher: inout Hasher) {
-        hasher.combine(template.hashValue)
-    }
-
+  public func hash(into hasher: inout Hasher) {
+    hasher.combine(template.hashValue)
+  }
 
   /// Returns the set of keywords in the URI Template
   public var variables: [String] {

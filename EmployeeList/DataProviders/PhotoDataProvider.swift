@@ -1,13 +1,12 @@
-//
-//  PhotoDataStore.swift
-//  EmployeeList
-//
-//  Created by Qi Zhan on 7/10/19.
-//  Copyright © 2019 Qi Zhan. All rights reserved.
-//
+// *************************************************************************************************
+// - MARK: Imports
 
 
 import Foundation
+
+
+// *************************************************************************************************
+// - MARK: PhotoDataProviderDelegate
 
 
 protocol PhotoDataProviderDelegate: NSObjectProtocol {
@@ -19,10 +18,18 @@ protocol PhotoDataProviderDelegate: NSObjectProtocol {
 }
 
 
+// *************************************************************************************************
+// - MARK: PhotoSize Enum
+
+
 enum PhotoSize: String {
     case large = "large"
     case small = "small"
 }
+
+
+// *************************************************************************************************
+// - MARK: PhotoDataProvider
 
 
 class  PhotoDataProvider {
@@ -112,6 +119,9 @@ class  PhotoDataProvider {
     }
     
     
+    // - MARK: Private Methods
+    
+    
     private func addPhoto(_ photo: UIImage?, with key: String?) {
         guard let photo = photo, let key = key else { return }
         
@@ -119,6 +129,8 @@ class  PhotoDataProvider {
             self?.unsafePhotoDict[key] = photo
         }
     }
+    
+    
 }
 
 
